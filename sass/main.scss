@@ -1,0 +1,284 @@
+// COLOR VARIABLES
+$white: #fff;
+$black: #000;
+$paler-grey: #f6f6f6;
+$pale-grey: #eee;
+$light-grey: #ccc;
+$mid-light-grey: #808080;
+$mid-grey: #575c61;
+$dark-grey: #2b2e32;
+$blue: #4c8be0;
+$green-grey: #f4f8f9;
+
+body {
+    padding-top: 0px;
+    color: $mid-grey;
+    background: $white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+body > section {
+    padding: 0 0;
+}
+h1, h2, h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight:700;
+    color:$dark-grey;
+}
+.post, .page {
+    margin: 0em;
+}
+
+// Top Menu 
+#header {
+    & .social-icons {
+        padding:0.9rem 0;
+        & i {
+            padding-left: 1.5rem !important;
+        }
+    }
+    & .menu-right {
+        text-align:right;
+        font-size:0.88rem;
+        & .menu-text::before {
+            font-family: FontAwesome;
+            content: "\f07a";
+            margin-right: 10px;
+        }
+        & .menu-text::after {
+            font-family: FontAwesome;
+            content: "\f107";
+            margin-left: 10px;
+        }
+        & a {
+            color:$mid-light-grey;
+            padding-right:1rem;
+            padding:0.9rem 1.5rem 0.9rem 1.5rem;
+            border-right:1px solid $pale-grey;
+            display:inline-block;
+            &:hover {
+                text-decoration:none;
+                cursor:pointer;
+            }
+        }
+        & ul {
+            margin:0;
+            & li {
+                display:inline;
+            }
+        }
+        }
+    & .top-menu-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        border-top: 3px solid $blue;
+        border-bottom: 1px solid $pale-grey;
+        padding-left: 0;
+        padding-right: 0;
+        & i {
+            color:$mid-grey;
+            padding-right: 0rem;
+            font-size: 0.98rem;
+        }
+    }
+    .navbar-light .navbar-toggler {
+        color: #000;
+        border-color: #000;
+    }
+}
+
+// #nav {
+//     & .shop-now {
+//         background:$blue !important;
+//         padding:0.7rem;
+//         color:$white;
+//         border-radius:1.5rem;
+//         font-weight:500;
+//         padding:0.8rem 1.5rem;
+//     }
+//     & .navbar-nav .nav-link {
+//         font-family: 'Montserrat', sans-serif;
+//         padding-right: 2.5rem !important;
+//         padding-left: 0rem !important;
+//         font-size: 0.87rem;
+//         letter-spacing: 0.02rem;
+//         font-weight: 300;
+//         color:$mid-light-grey;
+//     }
+//     & .main-menu-container {
+//         padding: 1.4rem 17% 1.5rem 17%;
+//         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.27);
+//         background:$white;
+//         z-index:9;
+//         & .navbar {
+//             float:right;
+//         }
+//     }
+//     & .main-nav-toggle {
+//         position:fixed;
+//         left:0;
+//         right:0;
+//         width:100%;
+//         top:0;
+//     }
+// }
+
+// Top Menu 
+
+// Carousel
+#myCarousel {
+    & img {
+        width:100%;
+    }
+}
+// End Carousel
+
+// Welcome
+    #welcome {
+        margin:2rem 0;
+        & .container {
+            border-bottom: 1px solid $pale-grey;
+        }
+    }
+// End Welcome
+
+// Featurette
+#featurette {
+    margin:2rem 0;
+    & .container {
+        border-bottom: 1px solid $pale-grey;
+    }
+    & .featurette {
+        background:$paler-grey;
+    }
+    & img {
+        width:100%;
+    }
+    & h4 {
+        padding: 1.0rem 0 0.1rem 0;
+        margin:0;
+    }
+    & .btn-primary {
+        margin-bottom:1rem;
+    }
+}
+// End Featurette
+
+
+// Pricing
+
+
+
+// End Pricing
+
+
+// Footer
+#footer {
+    color: $mid-grey;
+    font-size: 0.8rem;
+    background: $dark-grey;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    letter-spacing: 0.02rem; 
+    & .footer-social-icons {
+        margin-top: 85px; }
+    & .scrolltop {
+        background: $mid-grey;
+        font-size: 1.9rem;
+        padding: 0.0rem 0.8rem 0.5rem 0.8rem;
+        line-height: 1.3rem;
+        -webkit-border-top-left-radius: 0.25rem;
+        -webkit-border-top-right-radius: 0.25rem;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-topleft: 0.25rem;
+        -moz-border-radius-topright: 0.25rem;
+        -moz-border-radius-bottomright: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0; }
+    & a {
+        color: $mid-grey;
+        transition: all 0.2s ease-in; }
+    & a:hover {
+        color: $light-grey;
+        text-decoration: none; }
+    & ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+    & ul > li {
+        display: inline-block;
+        margin-left: 5px;
+        color: $white;
+        background: $dark-grey;
+        padding: 0.55rem 0.7rem 0.45rem 0.7rem;
+        border-radius: 0.3rem; }
+    & i {
+        font-size: 1.2rem; 
+        color:$mid-light-grey
+    }
+    & img {
+        width: 165px;
+        opacity: 0.35;
+        margin-bottom: 7px; }
+    & .copyright-padding {
+        padding-top: 14px; }
+    & .footer-container {
+        max-width: 1400px; }
+    & .footer-copyright {
+        margin-top: 20px;
+        display: block; }
+    }
+// End Footer
+
+
+@media only screen and (min-width: 1200px){
+}
+
+@media only screen and (max-width: 1750px){
+}
+
+@media only screen and (max-width: 1650px){
+}
+@media only screen and (max-width: 1550px){
+}
+@media only screen and (max-width: 1350px){
+}
+
+@media only screen and (max-width: 1250px){
+}
+
+@media only screen and (max-width: 1250px){
+}
+
+@media only screen and (max-width: 1150px){
+}
+@media only screen and (max-width: 1050px){
+}
+
+@media only screen and (max-width: 991px){   
+}
+
+@media only screen and (max-width: 920px){
+}
+@media only screen and (max-width: 860px){
+}
+@media only screen and (max-width: 767px){
+}
+@media only screen and (max-width: 700px){
+}
+@media only screen and (max-width: 600px){
+}
+@media only screen and (max-width: 575px){
+}
+
+@media only screen and (max-width: 480px){
+}
+@media only screen and (max-width: 380px){
+}
